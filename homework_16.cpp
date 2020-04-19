@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS //без этого не работает localtime :(
 
 
 #include <iostream>
@@ -9,12 +9,9 @@ using namespace std;
 
 int main()
 {
-    
-
     setlocale(0, "");
     const int N = 10;
-    int sum = 0;
-    int array[N][N];
+    int sum = 0, array[N][N];
     for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < N; j++)
